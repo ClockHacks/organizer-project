@@ -1,20 +1,26 @@
 import React from 'react';
 import Clock from './components/Clock.jsx';
 import clockImage from './clock.png';
+// import bgWave from './bgWave.png';
 
 function App() {
+  const numDegrees = ((((new Date().getHours() * 3600 + new Date().getMinutes() * 60 + new Date().getSeconds()) * 1000 + new Date().getMilliseconds()) / 86400000) * 360) - 90;
+
   return (
-    <body className="h-screen pt-3 bg-gradient-to-b from-green-200 to-green-500">
-      <div className="text-center">
-        <h1 className='text-5xl' style={{ color: '#8fa35f', font: "Poppins", paddingBottom: '15px' }} > BETTER - CLOCK</h1>
-        <h2 className='text-3xl'>the better, base-10 time system</h2>
-        <div className='relative'>
-          <img src={clockImage} alt="clock" className='relative' width='30%'></img>
-        </div>
-        <Clock />
-        <h2 class='text-2xl mt-5'>most things in our lives from temperature to measurement are base-10. why not time?</h2>
+    <div className="text-center">
+      <h1 className='text-5xl' style={{ color: 'white', font: "Poppins", paddingBottom: '30px' }} > BETTER - CLOCK</h1>
+      <h2 className='text-3xl' style={{ font: "Poppins" }}>The better, base-10 time system</h2>
+      <div className='relative'>
+        <img src={clockImage} alt="clock" className='mt-5 mb-5' width='30%'></img>
+        <div className={`w-3 h-3 rounded-full bg-black absolute left-0 right-0 top-0 bottom-0 m-auto`}></div>
+        <div id='hourhand' className={`w-[5%] h-[5px] rounded-full bg-black absolute top-[50%] left-[50%] origin-left`}></div>
+        <div id='minutehand' className={`w-[10%] h-[5px] rounded-full bg-black absolute top-[50%] left-[50%] origin-left`}></div>
+        <div id='secondhand' className={`w-[10%] h-[2px] rounded-full bg-black absolute top-[50%] left-[50%] origin-left`}></div>
       </div>
-    </body >
+      <Clock />
+      <h2 class='text-2xl mt-5' style={{ font: "Poppins" }}>most things in our lives from temperature to measurement are base-10. why not time?</h2>
+      {/* <img src={bgWave} className='mt-5 mb-5' width='30%'></img> */}
+    </div >
   );
 }
 

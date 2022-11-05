@@ -23,7 +23,7 @@ therefore,
 1 jay = 0.864 seconds
 
 therefore,
-1 nathan = 86400 seconds
-1 sean = 8640 seconds
-1 cera = 86.4 seconds
-1 jay = 0.864 seconds
+1 nathan = 86400 seconds -> day
+1 sean = 8640 seconds -> hour
+1 cera = 86.4 seconds -> minute
+1 jay = 0.864 seconds -> second
