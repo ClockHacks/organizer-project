@@ -7,7 +7,9 @@
 body {
   font-family: 'Inter', sans-serif;
   padding: 0.75rem;
-  background-image: linear-gradient(90deg, #5a5e58, #5a5e58, 100%);
+  /* background-image: linear-gradient(90deg, #5a5e58, #5a5e58, 100%); */
+  background-color: #353535;
+  color: #86b663;
 }
 
 img {

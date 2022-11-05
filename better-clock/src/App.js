@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="text-center">
-      <h1 className='text-5xl' style={{ color: 'white', font: "Poppins", paddingBottom: '30px' }} > BETTER - CLOCK</h1>
+      <h1 className='text-5xl text-[#86b663] m-8' style={{ font: "Poppins", paddingBottom: '30px' }} > BETTER - CLOCK</h1>
       <h2 className='text-3xl' style={{ font: "Poppins" }}>The better, base-10 time system</h2>
       <div className='relative'>
         <img src={clockImage} alt="clock" className='mt-5 mb-5' width='30%'></img>
