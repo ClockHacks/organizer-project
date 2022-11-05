@@ -4,7 +4,6 @@ import clockImage from './clock.png';
 // import bgWave from './bgWave.png';
 
 function App() {
-  const numDegrees = ((((new Date().getHours() * 3600 + new Date().getMinutes() * 60 + new Date().getSeconds()) * 1000 + new Date().getMilliseconds()) / 86400000) * 360) - 90;
 
   return (
     <div className="text-center">

@@ -1,8 +1,5 @@
 const Clock = ({ props }) => {
 
-	const milliseconds = new Date().getTime();
-	const now = new Date().getTime();
-	const day = new Date().toString();
 
 	setInterval(function () {
 		const hours = new Date().getHours();
@@ -36,10 +33,6 @@ const Clock = ({ props }) => {
 	}, 864);
 
 	setInterval(function () {
-		const hours = new Date().getHours() % 12;
-		const minutes = new Date().getMinutes();
-		const seconds = new Date().getSeconds();
-		// document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 		const timeString = new Date().toTimeString();
 		document.getElementById("clock").innerHTML = timeString.substring(0, timeString.indexOf(' '));
 	}, 1000)
